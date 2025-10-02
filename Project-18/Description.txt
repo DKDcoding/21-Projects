@@ -1,0 +1,3 @@
+Known issues currently (fixable): In the notebook the cell that creates the reviews_vector_db failed to execute due to a quota issue with the Gemini API. 
+The error AttributeError: 'NoneType' object has no attribute 'as_retriever' in the selected cell is happening because reviews_vector_db is None as a result of the previous cell's failure.
+Once that cell successfully creates the reviews_vector_db, this cell should work correctly.
